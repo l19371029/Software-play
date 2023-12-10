@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+    <section class="py-5">
+        <div class="container px-5 my-5">
+            <div class="text-center mb-5">
+                <h1 class="fw-bolder">Terminos y Condiciones</h1>
+            </div>
+            <div class="row gx-5">
+                <div class="col-xl-8">
+                <!-- Accordion 1-->
+                    <h2 class="fw-bolder mb-3">Acuerdos &amp; Condiciones</h2>
+                    <div class="accordion mb-5" id="accordionExample">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingOne"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Acuerdo #1</button></h3>
+                            <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>Acuerdos de entrega con el cliente:</strong>
+                                    <p>Los acuerdos de entrega con el cliente y su conclusión están sujetos al derecho de acuerdo a la carta superior de México.
+                                    El lugar de jurisdicción exclusivo para los litigios derivados de estos contratos o relacionados con ellos si el cliente es un comerciante.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingTwo"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Acuerdo #2</button></h3>
+                            <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>Este es el segundo acuerdo.</strong>
+                                    <!--The second accordition text -->
+                                    <p> Terminos del segundo acuerdo </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingThree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Acuerdo #3</button></h3>
+                            <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>Este es el tercer acuerdo.</strong>
+                                    <!--The third accordition text-->
+                                    <p> Terminos del tercer acuerdo </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ Accordion 2-->
+                    <h2 class="fw-bolder mb-3">Problematicas con el software</h2>
+                    <div class="accordion mb-5 mb-xl-0" id="accordionExample2">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingOne"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">Acuerdo #1</button></h3>
+                            <div class="accordion-collapse collapse show" id="collapseOne2" aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    <strong>Falla del producto.</strong>
+                                    <!--The first accordion text-->
+                                    <p>Primer acuerdo de falla del producto</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingOne"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">Acuerdo #2</button></h3>
+                            <div class="accordion-collapse collapse show" id="collapseOne2" aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    <strong>Falla del producto.</strong>
+                                    <!--The first accordion text-->
+                                    <p>segundo acuerdo de falla del producto</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="card border-0 bg-light mt-xl-5">
+                        <div class="card-body p-4 py-lg-5">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <div class="text-center">
+                                    <div class="h6 fw-bolder">Consulta si tienes más preguntas</div>
+                                    <p class="text-muted mb-4">
+                                        <br />
+                                        <a href="{% url 'contacts' %}">Contactanos</a>
+                                    </p>
+                                    <!--Social network contact-->
+                                    <div class="h6 fw-bolder">Siguenos</div>
+                                    <a class="fs-5 px-2 link-dark" href="#!"><i class="bi-twitter"></i></a>
+                                    <a class="fs-5 px-2 link-dark" href="#!"><i class="bi-facebook"></i></a>
+                                    <a class="fs-5 px-2 link-dark" href="#!"><i class="bi-linkedin"></i></a>
+                                    <a class="fs-5 px-2 link-dark" href="#!"><i class="bi-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock contenido %}
